@@ -20,8 +20,8 @@ app.use(express.json({ limit: "50mb" })); // Increase JSON payload limit
 app.use(cookieParser());
 app.use(
   cors({
-    // origin: ["http://localhost:5173", "https://realtime-mern-chatapplication.vercel.app"],
-    origin: true, // Allow all origins
+    // origin: true, // Allow all origins
+    origin: ["http://localhost:5173", "https://realtime-mern-chatapplication.vercel.app"],
     credentials: true,
   })
 );
